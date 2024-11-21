@@ -1,0 +1,31 @@
+@import "../../../../styles/colors";
+@import "../../../../styles/typography";
+
+.custom-button {
+  font-family: "GraphikLCG", sans-serif;
+  font-weight: 600;
+  @include H5;
+  max-width: 147px;
+  width: 100%;
+  height: 64px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  transition: background-color 0.5s;
+  &:hover {
+    background-color: var(--color-primary-hover);
+  }
+}
+
+.gray {
+  background-color: var(--color-ligth-gray);
+  color: var(--color-black);
+  transition: background-color 0.5s;
+  &:hover {
+    background-color: var(--color-white);
+  }
+}
