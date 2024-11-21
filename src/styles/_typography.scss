@@ -1,0 +1,94 @@
+:root {
+  //Line Heights
+  --line-height-xxl: 64px;
+  --line-height-xl: 56px;
+  --line-height-l: 40px;
+  --line-height-m: 32px;
+  --line-height-16text: 28px;
+  --line-height-s: 24px;
+  --line-height-12text: 16px;
+}
+
+@mixin H1 {
+  font-size: 52px;
+  line-height: var(--line-height-xxl);
+}
+
+@mixin H2 {
+  font-size: 40px;
+  line-height: var(--line-height-xl);
+}
+
+@mixin H3 {
+  font-size: 32px;
+  line-height: var(--line-height-l);
+}
+
+@mixin H4 {
+  font-size: 24px;
+  line-height: var(--line-height-m);
+}
+
+@mixin H5 {
+  font-size: 20px;
+  line-height: var(--line-height-s);
+}
+
+@mixin H6 {
+  font-size: 16px;
+  line-height: var(--line-height-s);
+}
+
+@mixin Caption {
+  font-size: 12px;
+  line-height: var(--line-height-s);
+  letter-spacing: 12%;
+}
+
+@mixin Body_18_Bold {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: var(--line-height-m);
+}
+
+@mixin Body_18 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: var(--line-height-m);
+}
+
+@mixin Body_16_Bold {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: var(--line-height-16text);
+}
+
+@mixin Body_16 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: var(--line-height-16text);
+}
+
+@mixin Body_14_Bold {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: var(--line-height-s);
+}
+
+@mixin Body_14 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: var(--line-height-s);
+}
+
+@mixin Body_12_Bold {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: var(--line-height-12text);
+}
+
+@mixin Body_12 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: var(--line-height-12text);
+}

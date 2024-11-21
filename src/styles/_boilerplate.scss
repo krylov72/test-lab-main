@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "GraphikLCG";
+  src: url("../assets/fonts/GraphikLCG-Medium.woff2") format("woff2") 400,
+    url("../assets/fonts/GraphikLCG-Semibold.woff2") format("woff2") 600;
+  font-style: normal;
+}
+
+:root {
+  --font-family: "GraphikLCG", sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+input,
+button,
+select,
+textarea,
+optgroup,
+option {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  color: inherit;
+}
+
+button {
+  all: unset;
+  display: inline-block;
+  cursor: pointer;
+}
+
+a:visited {
+  color: inherit;
+}
+
+body {
+  font-family: var(--font-family);
+  line-height: var(--line-height-m);
+  color: var(--color-light-100);
+  background-color: var(--color-dark-700);
+}
