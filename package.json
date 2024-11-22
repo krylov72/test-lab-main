@@ -1,7 +1,7 @@
 {
   "name": "test-lab-main",
   "version": "0.0.0",
-  "hompeage": "https://github.com/krylov72/",
+  "homepage": "https://krylov72.github.io/test-lab-main",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^19.0.0",
-    "@angular/cli": "^19.0.0",
+    "@angular/cli": "^19.0.1",
     "@angular/compiler-cli": "^19.0.0",
     "@types/jasmine": "~5.1.0",
     "angular-cli-ghpages": "^2.0.3",
