@@ -24,7 +24,8 @@
 }
 
 .card {
-  flex: 1 0 280px;
+  flex: 1 0 250px;
+  max-width: 220px;
   display: flex;
   flex-direction: column;
 }
@@ -53,6 +54,10 @@
   .card {
     flex-direction: row;
     column-gap: 16px;
+  }
+
+  .card-container {
+    flex-wrap: wrap;
   }
 
   .card img {
