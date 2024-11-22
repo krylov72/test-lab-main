@@ -3,9 +3,10 @@
 
 .page-container {
   max-width: 1008px;
-  width: 100%;
+
   margin: 80px auto;
   display: flex;
+  padding: 0 15px;
   flex-direction: column;
   h2 {
     @include H2;
@@ -49,7 +50,6 @@
 .answer {
   @include Body_18;
   color: var(--color-dark-gray);
-  max-width: 936px;
 }
 
 .question__open {
