@@ -1,14 +1,13 @@
 {
   "name": "test-lab-main",
   "version": "0.0.0",
-  "homepage": "https://krylov72.github.io/test-lab-main",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "ng run test-lab-main:deploy"
+    "deploy": "ng build --configuration=production && gh-pages -d dist"
   },
   "private": true,
   "dependencies": {
