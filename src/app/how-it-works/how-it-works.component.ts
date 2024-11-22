@@ -16,7 +16,7 @@ interface Cards {
 export class HowItWorksComponent {
   cards: Cards[] = [
     {
-      image: '/assets/images/mouse.png',
+      image: 'assets/images/truck.png',
       title: 'Прочитай задание внимательно',
       text: 'Думаю у тебя не займет это больше двух-трех минут',
     },
