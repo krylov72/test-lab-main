@@ -1,0 +1,12 @@
+<section class="infopage">
+  <div class="infopage-container">
+    <div *ngFor="let item of data " class="infopage__block">
+      <p class="infopage__title">{{item.title}}</p>
+      <p class="infopage__content">{{item.content}}</p>
+    </div>
+    <div class="infopage__block" *ngFor="let item of reversedData()">
+      <p class="infopage__title">{{item.title}}</p>
+      <p class="infopage__content">{{item.content}}</p>
+    </div>
+  </div>
+</section>

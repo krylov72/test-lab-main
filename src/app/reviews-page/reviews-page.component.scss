@@ -1,0 +1,64 @@
+@import '../../styles/colors';
+@import '../../styles/typography';
+
+.reviews-page {
+  background-color: var(--color-extralight-gray);
+}
+
+.reviews-container {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  max-width: 1216px;
+
+  h2 {
+    @include H2;
+  }
+}
+
+.cards-container {
+  padding-top: 32px;
+  display: flex;
+}
+
+.dot-container {
+  text-align: center;
+  margin: 50px 0 45px;
+}
+
+.dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin: 0 5px;
+  background-color: var(--color-mid-gray);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: var(--color-primary);
+}
+
+@media (max-width: 768px) {
+  .reviews-container {
+    h2 {
+      padding-top: 33px;
+    }
+  }
+
+  .arrow {
+    display: none;
+  }
+}
+
+@media (max-width: 370px) {
+  .reviews-container {
+    h2 {
+      @include H4;
+    }
+  }
+}

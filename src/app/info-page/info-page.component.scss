@@ -1,0 +1,42 @@
+@import '../../styles/colors';
+@import '../../styles/typography';
+
+.infopage {
+  background-color: var(--color-extralight-gray);
+}
+
+.infopage-container {
+  max-width: 1216px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.infopage__title {
+  @include Body_18_Bold;
+}
+
+.infopage__content {
+  @include Body_16;
+}
+
+@media (max-width: 768px) {
+  .infopage-container {
+    padding: 20px 20px 32px;
+    display: flex;
+  }
+
+  .infopage__block {
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+  }
+}
+
+@media (max-width: 375px) {
+  .infopage__block {
+    gap: 14px;
+  }
+}

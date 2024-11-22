@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="input-container">
+    <input type="text" id="name" placeholder="Имя" name="name" ngModel required minlength="3" #nameInput="ngModel">
+    <label for="name" class="input-label">Имя</label>
+    <div *ngIf="nameInput.invalid && nameInput.touched" class="error-message">
+      <span *ngIf="nameInput.errors?.['required']">Имя обязательно</span>
+      <span *ngIf="nameInput.errors?.['minlength']">Минимум 3 символа</span>
+    </div>
+  </div>
+  <div class="input-container">
+
+    <input type="text" id="tel" placeholder="Телефон" name="tel" minlength="11" required="" ngModel #telInput="ngModel">
+    <label for="tel">Телефон</label>
+    <div *ngIf="telInput.invalid && telInput.touched" class="error-message">
+      <span *ngIf="telInput.errors?.['required']">Телефон обязателен</span>
+      <span *ngIf="telInput.errors?.['minlength']">Минимум 11 символов</span>
+    </div>
+  </div>
+</div>

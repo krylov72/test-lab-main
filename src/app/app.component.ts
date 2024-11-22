@@ -1,19 +1,30 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { FormsModule } from '@angular/forms';
-import { CustomCheckboxComponent } from "./components/UI/custom-checkbox/custom-checkbox.component";
-import { CustomButtonComponent } from "./components/UI/custom-button/custom-button.component";
-import { CustomInputComponent } from "./components/UI/custom-input/custom-input.component";
-
+import { HomeComponent } from './home/home.component';
+import { HowItWorksComponent } from './how-it-works/how-it-works.component';
+import { ThirdBlockComponent } from './third-block/third-block.component';
+import { ReviewsPageComponent } from './reviews-page/reviews-page.component';
+import { FaqPageComponent } from './faq-page/faq-page.component';
+import { MatIconModule } from '@angular/material/icon';
+import { InfoPageComponent } from './info-page/info-page.component';
+import { FormComponent } from './form/form.component';
+import { FooterComponent } from './footer/footer.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, CustomCheckboxComponent, CustomButtonComponent, CustomInputComponent],
+  imports: [
+    HomeComponent,
+    HowItWorksComponent,
+    ThirdBlockComponent,
+    ReviewsPageComponent,
+    FaqPageComponent,
+    MatIconModule,
+    InfoPageComponent,
+    FormComponent,
+    FooterComponent,
+  ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
 })
 export class AppComponent {
   title = 'testLabMain';
-
-  
 }

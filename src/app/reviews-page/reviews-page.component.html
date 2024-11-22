@@ -1,0 +1,18 @@
+<section class="reviews-page">
+  <div class="reviews-container">
+    <h2>Отзывы</h2>
+    <div class="cards-container">
+      <button class="arrow prev-arrow" (click)="prevReview()">←</button>
+      <div>
+        <app-review [aboutPerson]="currentReviews" />
+      </div>
+      <button class="arrow next-arrow" (click)="nextReview()">→</button>
+    </div>
+  </div>
+  <div class="dot-container">
+    <span [ngClass]="{'active':(currentIndex / reviewsPerPage) === i}" class="dot"
+      *ngFor="let item of [].constructor(totalPages),let i=index" (click)="currentIndex = i * reviewsPerPage"></span>
+  </div>
+
+
+</section>

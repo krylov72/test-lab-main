@@ -1,12 +1,12 @@
 @font-face {
-  font-family: "GraphikLCG";
-  src: url("../assets/fonts/GraphikLCG-Medium.woff2") format("woff2") 400,
-    url("../assets/fonts/GraphikLCG-Semibold.woff2") format("woff2") 600;
+  font-family: 'GraphikLCG';
+  src: url('/assets/fonts/GraphikLCG-Medium') format('woff2') 400,
+    url('/assets/fonts/GraphikLCG-Semibold') format('woff2') 600;
   font-style: normal;
 }
 
 :root {
-  --font-family: "GraphikLCG", sans-serif;
+  --font-family: 'GraphikLCG', sans-serif;
 }
 
 html {
@@ -15,6 +15,7 @@ html {
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
 }
 
 *,
@@ -62,4 +63,8 @@ body {
   line-height: var(--line-height-m);
   color: var(--color-light-100);
   background-color: var(--color-dark-700);
+}
+
+body.menu-open {
+  overflow: hidden;
 }

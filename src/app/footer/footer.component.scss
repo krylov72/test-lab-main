@@ -1,0 +1,10 @@
+@import '../../styles/colors';
+@import '../../styles/typography';
+
+.footer {
+  padding: 28px 0;
+  width: 100%;
+  @include Body_18;
+  text-align: center;
+  color: var(--color-black);
+}

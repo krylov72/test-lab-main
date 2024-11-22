@@ -1,0 +1,20 @@
+<header class="app-header">
+    <div class="logo">
+        <h5 class="logo__text" [class.blackColor]="isMenuOpen">testLab</h5>
+    </div>
+    <div class="menu-wrapper">
+        <div class="menu-toggle" (click)="toggleMenu()" [class.active]="isMenuOpen" [attr.aria-expanded]="isMenuOpen">
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav [class.open]="isMenuOpen" role="navigation" aria-labelledby="menu-toggle">
+            <span class="close-icon">X</span>
+            <ul>
+                <li><a (click)="toggleMenu(); scrollTo('how-it-works')">Как это работает</a></li>
+                <li><a (click)="toggleMenu(); scrollTo('third-block')">3-й блок</a></li>
+                <li><a (click)="toggleMenu(); scrollTo('faq')">Вопросы и ответы</a></li>
+                <li><a (click)="toggleMenu(); scrollTo('form')">Форма</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>

@@ -1,0 +1,17 @@
+<section id="faq">
+  <div class="page-container">
+    <h2>Вопросы и ответы</h2>
+    <ul class="questions-container">
+      <details class="faq__block" *ngFor="let item of questions,let i = index">
+        <summary class="questions">
+          <p class="question">{{item.question}}</p>
+          <mat-icon [fontIcon]="isAnswerVisible[i] === true? 'cancel_outlined':'add_circle_outlined'"
+            (click)="chooseQuestion(i)" class="question__open"></mat-icon>
+        </summary>
+        <p class="answer" *ngIf="isAnswerVisible[i]">{{item.answer}}</p>
+      </details>
+
+    </ul>
+  </div>
+
+</section>

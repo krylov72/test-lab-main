@@ -1,0 +1,12 @@
+<div class="reviews-item">
+  <div class="reviews__container" *ngFor="let item of aboutPerson">
+    <div class="reviews-container__header">
+      <img class="reviews-image" src={{item.photo}} alt="person">
+      <div class="reviews-info">
+        <h6 class="reviews-info__name">{{item.fullname}}</h6>
+        <small class="reviews-info__about" *ngIf="aboutPerson">{{item.info}}</small>
+      </div>
+    </div>
+    <p class="reviews-reviewContainer">{{item.review}}</p>
+  </div>
+</div>

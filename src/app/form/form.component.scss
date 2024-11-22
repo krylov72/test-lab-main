@@ -1,0 +1,53 @@
+@import '../../styles/colors';
+@import '../../styles/typography';
+
+.form-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h3 {
+    margin-top: 80px;
+    @include H2;
+  }
+}
+
+.form-container {
+  max-width: 800px;
+  width: 100%;
+  margin: 44px 0 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.action-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .form-page {
+    h3 {
+      margin-top: 56px;
+    }
+  }
+
+  .form-container {
+    margin: 32px 0 0 0;
+    padding: 0 20px;
+    max-width: 900px;
+  }
+}
+
+@media (max-width: 375px) {
+  .form-page H3 {
+    @include H4;
+  }
+  .action-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}
