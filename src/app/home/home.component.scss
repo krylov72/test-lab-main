@@ -5,8 +5,8 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
 
   background: url('/images/bg-min.png') no-repeat right 35% bottom 90%;
   background-size: cover;
