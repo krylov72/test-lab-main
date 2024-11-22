@@ -1,7 +1,7 @@
 {
   "name": "test-lab-main",
   "version": "0.0.0",
-  "homepage": ".",
+  "homepage": "https://krylov72.github.io/testLabMain",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
