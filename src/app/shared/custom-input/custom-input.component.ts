@@ -7,6 +7,13 @@ import { FormsModule, NG_VALUE_ACCESSOR } from '@angular/forms';
   imports: [CommonModule, FormsModule],
   templateUrl: './custom-input.component.html',
   styleUrl: './custom-input.component.scss',
+  providers: [
+    {
+      provide: NG_VALUE_ACCESSOR,
+      useExisting: forwardRef(() => CustomInputComponent),
+      multi: true,
+    },
+  ],
 })
 export class CustomInputComponent {
   showPlaceholder = false;
