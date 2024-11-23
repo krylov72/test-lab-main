@@ -1,10 +1,13 @@
-<app-home></app-home>
-<main>
-  <app-how-it-works></app-how-it-works>
-  <app-third-block></app-third-block>
-  <app-reviews-page></app-reviews-page>
-  <app-faq-page></app-faq-page>
-  <app-info-page></app-info-page>
-  <app-form></app-form>
-  <app-footer></app-footer>
-</main>
+<app-loading-component *ngIf="isLoading"></app-loading-component>
+<div *ngIf="!isLoading">
+  <app-home></app-home>
+  <main>
+    <app-how-it-works></app-how-it-works>
+    <app-third-block></app-third-block>
+    <app-reviews-page></app-reviews-page>
+    <app-faq-page></app-faq-page>
+    <app-info-page></app-info-page>
+    <app-form></app-form>
+    <app-footer></app-footer>
+  </main>
+</div>

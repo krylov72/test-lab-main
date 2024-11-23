@@ -8,6 +8,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { InfoPageComponent } from './info-page/info-page.component';
 import { FormComponent } from './form/form.component';
 import { FooterComponent } from './footer/footer.component';
+import { LoadingComponentComponent } from './components/loading-component/loading-component.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -21,10 +23,20 @@ import { FooterComponent } from './footer/footer.component';
     InfoPageComponent,
     FormComponent,
     FooterComponent,
+    LoadingComponentComponent,
+    CommonModule,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
   title = 'testLabMain';
+
+  isLoading = true;
+
+  ngOnInit() {
+    setTimeout(() => {
+      this.isLoading = false;
+    }, 2000);
+  }
 }
