@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { HeaderComponent } from './header/header.component';
-import { CustomButtonComponent } from '../components/UI-kit/custom-button/custom-button.component';
+import { HeaderComponent } from '../../shared/header/header.component';
+import { CustomButtonComponent } from '../../shared/custom-button/custom-button.component';
 
 @Component({
   selector: 'app-home',

@@ -1,5 +1,5 @@
-@import '../../styles/colors';
-@import '../../styles/typography';
+@import '../../../styles/colors';
+@import '../../../styles/typography';
 
 .page-container {
   max-width: 1216px;
@@ -53,7 +53,7 @@
   }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 400px) {
   .page-container {
     flex-wrap: wrap-reverse;
   }

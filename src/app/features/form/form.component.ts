@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { CustomCheckboxComponent } from '../components/UI-kit/custom-checkbox/custom-checkbox.component';
-import { CustomButtonComponent } from '../components/UI-kit/custom-button/custom-button.component';
-import { CustomInputComponent } from '../components/UI-kit/custom-input/custom-input.component';
+import { CustomCheckboxComponent } from '../../shared/custom-checkbox/custom-checkbox.component';
+import { CustomButtonComponent } from '../../shared/custom-button/custom-button.component';
+import { CustomInputComponent } from '../../shared/custom-input/custom-input.component';
 import { FormsModule, NgForm } from '@angular/forms';
 
 @Component({

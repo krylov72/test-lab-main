@@ -23,7 +23,8 @@ export class HeaderComponent {
     }
   }
 
-  scrollTo(elementId: string) {
+  navigateToSection(elementId: string) {
+    this.toggleMenu();
     this.scrollService.scrollToElement(elementId);
   }
 }

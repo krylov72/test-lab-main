@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, HostListener } from '@angular/core';
-import { ReviewComponent, Users } from './review/review.component';
+import { ReviewComponent, Users } from '../../shared/review/review.component';
 
 @Component({
   selector: 'app-reviews-page',

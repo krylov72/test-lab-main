@@ -66,6 +66,8 @@ body {
   background-color: var(--color-dark-700);
 }
 
-body.menu-open {
-  overflow: hidden;
+@media (max-width: 768px) {
+  body.menu-open {
+    overflow: hidden;
+  }
 }

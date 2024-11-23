@@ -10,10 +10,10 @@
         <nav [class.open]="isMenuOpen" role="navigation" aria-labelledby="menu-toggle">
             <span class="close-icon">X</span>
             <ul>
-                <li><a (click)="toggleMenu(); scrollTo('how-it-works')">Как это работает</a></li>
-                <li><a (click)="toggleMenu(); scrollTo('third-block')">3-й блок</a></li>
-                <li><a (click)="toggleMenu(); scrollTo('faq')">Вопросы и ответы</a></li>
-                <li><a (click)="toggleMenu(); scrollTo('form')">Форма</a></li>
+                <li><a (click)="navigateToSection('how-it-works')">Как это работает</a></li>
+                <li><a (click)="navigateToSection('third-block')">3-й блок</a></li>
+                <li><a (click)="navigateToSection('faq')">Вопросы и ответы</a></li>
+                <li><a (click)="navigateToSection('form')">Форма</a></li>
             </ul>
         </nav>
     </div>
