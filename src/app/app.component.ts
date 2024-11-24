@@ -10,7 +10,6 @@ import { ReviewsPageComponent } from './features/reviews-page/reviews-page.compo
 import { FaqPageComponent } from './features/faq-page/faq-page.component';
 import { InfoPageComponent } from './features/info-page/info-page.component';
 import { FormComponent } from './features/form/form.component';
-import { FooterComponent } from "./features/footer/footer.component";
 
 @Component({
   selector: 'app-root',
@@ -25,8 +24,7 @@ import { FooterComponent } from "./features/footer/footer.component";
     FaqPageComponent,
     InfoPageComponent,
     FormComponent,
-    FooterComponent
-],
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
