@@ -1,32 +1,49 @@
 <div class="container">
-  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <form class="form-container" [formGroup]="form" (ngSubmit)="onSubmit()">
     <div class="input-container">
-      <input type="text" id="name" name="name" (focus)="onFocus('name')" (blur)="onBlur('name')" formControlName="name"
-        [placeholder]="showPlaceholder.name.isShow?'Имя':''">
-      <label for="name" class="input-label">Имя</label>
-      <div *ngIf="form.get('name')?.invalid && form.get('name')?.touched">
-        <div class="input-errors" *ngIf="form.get('name')?.errors?.['required']">Имя обязательно.</div>
-        <div class="input-errors" *ngIf="form.get('name')?.errors?.['minlength']">Имя должно содержать не менее 3
-          символов.</div>
+      <div class="input__email">
+        <div class="icon-container">
+          <input type="text" id="name" name="name" (focus)="onFocus('name')" (blur)="onBlur('name')"
+            formControlName="name" [placeholder]="showPlaceholder.name.isShow?'Имя':''">
+          <label for="name" class="input-label">Имя</label>
+          <mat-icon [fontIcon]="form.get('name')?.errors?'cancel':'check_circle'" *ngIf="form.get('name')?.touched"
+            [ngClass]="{'success':!form.get('name')?.errors,'error':form.get('name')?.errors}">check_circle</mat-icon>
+        </div>
+
+        <div *ngIf="form.get('name')?.invalid && form.get('name')?.touched">
+          <div class="input-errors" *ngIf="form.get('name')?.errors?.['required']">Имя обязательно.</div>
+          <div class="input-errors" *ngIf="form.get('name')?.errors?.['minlength']">Имя должно содержать не менее 3
+            символов.</div>
+        </div>
+
       </div>
 
-    </div>
+      <div class="input__phone">
+        <div class="icon-container">
+          <input type="tel" id="phone" name="phone" formControlName="phone" (focus)="onFocus('phone')"
+            (blur)="onBlur('phone')" [placeholder]="showPlaceholder.phone.isShow?'Телефон':''">
+          <label for="phone">Телефон</label>
+          <mat-icon [fontIcon]="form.get('phone')?.errors?'cancel':'check_circle'" *ngIf="form.get('phone')?.touched"
+            [ngClass]="{'success':!form.get('phone')?.errors,'error':form.get('phone')?.errors}">check_circle</mat-icon>
+        </div>
 
-    <div class="input-container">
-      <input type="tel" id="phone" name="phone" formControlName="phone" (focus)="onFocus('phone')"
-        (blur)="onBlur('phone')" [placeholder]="showPlaceholder.phone.isShow?'Телефон':''">
-      <label for="phone">Телефон</label>
-      <div class='input-errors' *ngIf="form.get('phone')?.invalid && form.get('phone')?.touched">
-        Введите корректный номер телефона.
+        <div class='input-errors' *ngIf="form.get('phone')?.invalid && form.get('phone')?.touched">
+          Введите корректный номер телефона.
+        </div>
       </div>
     </div>
 
-    <div class="">
-      <app-custom-checkbox formControlName="agree" id="agree" labelText="Согласен с условиями"></app-custom-checkbox>
-      <div *ngIf="form.get('agree')?.invalid && form.get('agree')?.touched">
-        Согласие с условиями обязательно.
+
+
+    <div class="action-container">
+      <div class="checkbox-container">
+        <app-custom-checkbox formControlName="agree" id="agree" labelText="Согласен с условиями"></app-custom-checkbox>
+        <div class="input-errors" *ngIf="form.get('agree')?.invalid && form.get('agree')?.touched">
+          Согласие с условиями обязательно.
+        </div>
       </div>
+      <app-custom-button [disabled]="!formIsValid" title="Отправить" type="submit"></app-custom-button>
     </div>
-    <app-custom-button [disabled]="!formIsValid" title="Отправить" type="submit"></app-custom-button>
+
   </form>
 </div>

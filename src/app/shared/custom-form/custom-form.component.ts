@@ -8,6 +8,7 @@ import {
 } from '@angular/forms';
 import { CustomButtonComponent } from '../custom-button/custom-button.component';
 import { CustomCheckboxComponent } from '../custom-checkbox/custom-checkbox.component';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-custom-form',
@@ -16,6 +17,7 @@ import { CustomCheckboxComponent } from '../custom-checkbox/custom-checkbox.comp
     ReactiveFormsModule,
     CustomButtonComponent,
     CustomCheckboxComponent,
+    MatIconModule,
   ],
   templateUrl: './custom-form.component.html',
   styleUrl: './custom-form.component.scss',
@@ -37,6 +39,8 @@ export class CustomFormComponent {
       agree: [false, [Validators.requiredTrue]],
     });
   }
+
+  
 
   ngOnInit(): void {
     this.form.valueChanges.subscribe(() => {
