@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "testLabMain": {
+    "test-lab-main": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -19,7 +19,7 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": "dist/test-lab-main",
-            "baseHref": "/",
+            "baseHref": "/test-lab-main",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": ["zone.js"],
@@ -66,10 +66,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "testLabMain:build:production"
+              "buildTarget": "test-lab-main:build:production"
             },
             "development": {
-              "buildTarget": "testLabMain:build:development"
+              "buildTarget": "test-lab-main:build:development"
             }
           },
           "defaultConfiguration": "development"
