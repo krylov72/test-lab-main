@@ -1,5 +1,5 @@
-@import '../../../styles/colors';
-@import '../../../styles/typography';
+@use '../../../styles/colors' as colors;
+@use '../../../styles/typography' as typography;
 
 .page-container {
   max-width: 1216px;
@@ -21,11 +21,11 @@
 }
 
 .text-container__title {
-  @include H3;
+  @include typography.H3;
 }
 
 .text-container__paragraph {
-  @include Body_16;
+  @include typography.Body_16;
   color: var(--color-dark-gray);
 }
 
@@ -49,7 +49,7 @@
   }
 
   .text-container__title {
-    @include H5;
+    @include typography.H5;
   }
 }
 

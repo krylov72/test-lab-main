@@ -1,11 +1,11 @@
-@import '../../../styles/colors';
-@import '../../../styles/typography';
+@use '../../../styles/colors' as colors;
+@use '../../../styles/typography' as typography;
 
 .custom-button {
   font-family: 'GraphikLCG', sans-serif;
   font-weight: 600;
 
-  @include H5;
+  @include typography.H5;
   text-align: center;
   min-width: 200px;
   height: 64px;

@@ -1,5 +1,5 @@
-@import '../../../styles/colors';
-@import '../../../styles/typography';
+@use '../../../styles/colors' as colors;
+@use '../../../styles/typography' as typography;
 
 .form-page {
   display: flex;
@@ -9,7 +9,7 @@
 
   h3 {
     margin-top: 80px;
-    @include H2;
+    @include typography.H2;
   }
 }
 
@@ -44,7 +44,7 @@
 
 @media (max-width: 390px) {
   .form-page H3 {
-    @include H4;
+    @include typography.H4;
   }
   .action-container {
     display: flex;

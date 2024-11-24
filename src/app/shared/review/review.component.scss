@@ -1,5 +1,5 @@
-@import '../../../styles/colors';
-@import '../../../styles/typography';
+@use '../../../styles/colors' as colors;
+@use '../../../styles/typography' as typography;
 
 .reviews-item {
   display: flex;
@@ -37,16 +37,16 @@
 }
 
 .reviews-info__name {
-  @include H6;
+  @include typography.H6;
 }
 
 .reviews-info__about {
-  @include Body_12;
+  @include typography.Body_12;
   color: var(--color-dark-gray);
 }
 
 .reviews-reviewContainer {
-  @include Body_14;
+  @include typography.Body_14;
   margin-bottom: 70px;
 }
 

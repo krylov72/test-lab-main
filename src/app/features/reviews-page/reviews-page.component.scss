@@ -1,5 +1,5 @@
-@import '../../../styles/colors';
-@import '../../../styles/typography';
+@use '../../../styles/colors' as colors;
+@use '../../../styles/typography' as typography;
 
 .reviews-page {
   background-color: var(--color-extralight-gray);
@@ -15,7 +15,7 @@
   max-width: 1216px;
 
   h2 {
-    @include H2;
+    @include typography.H2;
   }
 }
 
@@ -58,7 +58,7 @@
 @media (max-width: 390px) {
   .reviews-container {
     h2 {
-      @include H4;
+      @include typography.H4;
     }
   }
 }

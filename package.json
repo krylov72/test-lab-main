@@ -1,6 +1,7 @@
 {
   "name": "test-lab-main",
   "version": "0.0.0",
+  "homepage": ".",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

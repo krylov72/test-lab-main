@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
-@import './styles/index.scss';
-@import '@angular/material/prebuilt-themes/azure-blue.css';
+@use './styles/index.scss' as styles;
+@use '@angular/material/prebuilt-themes/azure-blue.css';
 
 html,
 body {

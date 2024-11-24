@@ -1,5 +1,5 @@
-@import '../../../styles/colors';
-@import '../../../styles/typography';
+@use '../../../styles/colors' as colors;
+@use '../../../styles/typography' as typography;
 
 .infopage {
   background-color: var(--color-extralight-gray);
@@ -16,11 +16,11 @@
 }
 
 .infopage__title {
-  @include Body_18_Bold;
+  @include typography.Body_18_Bold;
 }
 
 .infopage__content {
-  @include Body_16;
+  @include typography.Body_16;
 }
 
 @media (max-width: 768px) {

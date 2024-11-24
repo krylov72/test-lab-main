@@ -1,5 +1,5 @@
-@import '../../../styles/colors';
-@import '../../../styles/typography';
+@use '../../../styles/colors' as colors;
+@use '../../../styles/typography' as typography;
 
 .page-container {
   max-width: 1008px;
@@ -9,7 +9,7 @@
   padding: 0 15px;
   flex-direction: column;
   h2 {
-    @include H2;
+    @include typography.H2;
     text-align: center;
   }
 }
@@ -21,7 +21,7 @@
 }
 
 .question {
-  @include Body_18_Bold;
+  @include typography.Body_18_Bold;
   transition: color 0.5s;
 }
 
@@ -48,7 +48,7 @@
 }
 
 .answer {
-  @include Body_18;
+  @include typography.Body_18;
   color: var(--color-dark-gray);
 }
 
@@ -76,7 +76,7 @@
     padding: 0 16px;
 
     h2 {
-      @include H4;
+      @include typography.H4;
     }
   }
 

@@ -1,5 +1,5 @@
-@import '../../../styles/colors';
-@import '../../../styles/typography';
+@use '../../../styles/colors' as colors;
+@use '../../../styles/typography' as typography;
 
 .page-container {
   max-width: 1216px;
@@ -11,7 +11,7 @@
 
 .page-title {
   text-align: center;
-  @include H2;
+  @include typography.H2;
 }
 
 .card-container {
@@ -38,11 +38,11 @@
 }
 
 .card__title {
-  @include H6;
+  @include typography.H6;
 }
 
 .card__text {
-  @include Body_14;
+  @include typography.Body_14;
   color: var(--color-dark-gray);
 }
 
@@ -73,6 +73,6 @@
 
 @media (max-width: 390px) {
   .page-title {
-    @include H4;
+    @include typography.H4;
   }
 }
