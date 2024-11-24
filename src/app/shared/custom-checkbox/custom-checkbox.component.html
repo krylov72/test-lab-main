@@ -1,3 +1,4 @@
-<div class="custom-checkbox">
-   <mat-checkbox class="checkbox">{{text}}</mat-checkbox>
+<div>
+  <input type="checkbox" [id]="id" [checked]="checked" (change)="toggleCheckbox()" />
+  <label [for]="id">{{ labelText }}</label>
 </div>

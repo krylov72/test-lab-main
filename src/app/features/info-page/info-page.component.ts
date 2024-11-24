@@ -25,6 +25,6 @@ export class InfoPageComponent {
   ];
 
   reversedData() {
-    return this.data.slice().reverse(); // Возвращаем реверсированный массив
+    return this.data.slice().reverse();
   }
 }

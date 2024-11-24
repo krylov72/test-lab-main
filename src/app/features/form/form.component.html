@@ -1,13 +1,6 @@
 <section id="form" class="form-page">
   <h3>Отправь форму</h3>
   <div class="form-container">
-
-    <form class="form" #form="ngForm" (ngSubmit)="onSubmit(form)">
-      <app-custom-input></app-custom-input>
-      <div class="action-container">
-        <app-custom-checkbox text="Согласен, отказываюсь"></app-custom-checkbox>
-        <app-custom-button type="sumbit" [disabled]="form.invalid" title="Отправить"></app-custom-button>
-      </div>
-    </form>
+    <app-custom-form></app-custom-form>
   </div>
 </section>
