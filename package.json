@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "ng build --configuration=production && gh-pages -d dist"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist/test-lab-main"
   },
   "private": true,
   "dependencies": {
