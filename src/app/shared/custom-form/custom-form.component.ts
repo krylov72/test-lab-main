@@ -40,8 +40,6 @@ export class CustomFormComponent {
     });
   }
 
-  
-
   ngOnInit(): void {
     this.form.valueChanges.subscribe(() => {
       this.formIsValid = this.form.valid;
@@ -65,10 +63,12 @@ export class CustomFormComponent {
   }
 
   onSubmit() {
+    this.formIsValid = false;
     if (this.form.valid) {
       console.log(this.form.value);
       setTimeout(() => {
         alert('Данные успешно отправлены');
+        this.form.reset();
       }, 1000);
     }
   }
