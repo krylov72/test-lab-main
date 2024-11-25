@@ -1,4 +1,4 @@
-<div>
-  <input type="checkbox" [id]="id" [checked]="checked" (change)="toggleCheckbox()" />
-  <label [for]="id">{{ labelText }}</label>
+<div class="checkbox-container">
+  <input class="checkbox-input" type="checkbox" [id]="id" [checked]="checked" (change)="toggleCheckbox()" />
+  <label class="checkbox__text" [for]="id">{{ labelText }}</label>
 </div>

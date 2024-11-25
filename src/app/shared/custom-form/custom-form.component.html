@@ -37,7 +37,7 @@
 
     <div class="action-container">
       <div class="checkbox-container">
-        <app-custom-checkbox formControlName="agree" id="agree" labelText="Согласен с условиями"></app-custom-checkbox>
+        <app-custom-checkbox formControlName="agree" id="agree" labelText="Согласен, отказываюсь"></app-custom-checkbox>
         <div class="input-errors" *ngIf="form.get('agree')?.invalid && form.get('agree')?.touched">
           Согласие с условиями обязательно.
         </div>
